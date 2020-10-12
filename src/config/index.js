@@ -15,13 +15,12 @@ let config = {
   routerBase: env.BASE_URL // VueRouter base，同nginx配置
 }
 
-console.log(config)
 
 if (config.type === 'development') {
-  // config.port = ':8089'
-  // config.host = 'http://192.168.148.190'
-  config.port = ':8090'
-  config.host = 'http://10.20.1.110'
+  config.port = ':8089'
+  config.host = 'http://192.168.148.190'
+  // config.port = ':8090'
+  // config.host = 'http://10.20.1.110'
   // config.port = ':8090'
   // config.host = 'http://10.20.0.100'
 } else if (config.type === 'production') {
